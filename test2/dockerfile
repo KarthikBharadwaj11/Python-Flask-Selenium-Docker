@@ -1,0 +1,8 @@
+FROM python:3
+WORKDIR /home/kb/Desktop/test2
+COPY . .
+RUN pip3 install -r requirements.txt
+EXPOSE 5000/tcp
+CMD ["test2.py"]
+ENTRYPOINT ["python3"]
+
